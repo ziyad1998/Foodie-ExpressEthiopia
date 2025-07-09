@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart - FoodieExpress Ethiopia</title>
+  <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🍽️ FoodieExpress Ethiopia</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart <span id="cart-count" class="cart-badge">0</span></a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <!-- Cart Section -->
+  <section class="menu-section">
+    <h2>🛒 Your Cart | የግዢ ዝርዝር</h2>
+    <div id="cart-container" class="cart-container"></div>
+
+    <!-- ✅ Only this total section remains -->
+    <div class="cart-footer">
+      <strong>Total: </strong><span id="cart-total">ETB 0</span>
+      <button id="checkout-btn">Buy All / Checkout</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 FoodieExpress Ethiopia | Fast & Fresh የቤት ጣዕም
+  </footer>
+
+  <script src="cart.js"></script>
+  <script src="cart-badge.js"></script>
+
+</body>
+</html>
